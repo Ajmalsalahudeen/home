@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4eb59d, #56d3be);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffa726;
+        padding: 30px;
+    
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgba(80, 80, 231, 0.512);
+}
+
+.main-header h1 {
+    color: #150303d2;
+    font-size: 2.1rem;
+    font-weight: bold;
+    /* font-style: italic; */
+    
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* .illustration-container {
+    background: #2c2c2c;
+   
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+} */
+
+.main-illustration {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.heading-section h2,
+.heading-2-section h2 {
+    color: #171616de;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.heading-section p,
+.heading-2-section p {
+    color: #2c2c2c;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.sub-heading-section {
+    background: rgba(255, 255, 255, 0.1);
+    
+    padding: 20px;
+}
+
+.sub-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sub-text {
+    flex: 3;
+}
+
+.sub-text h3 {
+    color: #2c2c2c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sub-text p {
+    color: #2c2c2c;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.sub-image {
+    flex-shrink: 0;
+    size-adjust: 200px;
+}
+
+.small-illustration {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    
+    
+    padding: 10px;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .heading-section h2,
+    .heading-2-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .sub-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+}
